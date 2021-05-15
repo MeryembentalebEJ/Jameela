@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jameela website (e-commerce)</title>
+    <!-- Lien pour les font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style_beauty.css">
+    <!-- Jq ui pour l autocomplete -->
+    <link rel="stylesheet" href="jq-ui.css">
+</head>
+<body>
+  <!--==================== Start Header avec la navbar ======================-->
+  <header>
+    <div id="menu" class="fa fa-diamond"></div>
+    <a href="#" class="logo"><img src="assets/img/logo_meryem.png" src="" alt="logo" height="100" width="100"></a>
+    <nav class="navbar">
+      <a href="home-page/home.html">Accueil</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#tote-bags">Tote bags</a>
+      <a href="#sunglasses">Sunglasses</a>
+      <a href="#swimsuites">Swimsuits</a>
+    </nav>
+    <div class="icons">
+      <i class="fa fa-search" id="search-icon"></i>
+      <i class="fa fa-user-circle-o icon" id="user"></i>
+      <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</i>
+    </div>
+      
+    </div>
+    <form id="search-box">
+      <input type="search" id="search" placeholder="Search here">
+      <label for="search" class="fa fa-search" style="font-size:20px"></label>
+    </form>
+  </header>
+  <!--==================== End Header avec la navbar ======================-->
+  <!--====================== Start login and sing in =======================-->
+  <div class="form">
+    <!-- login -->
+    <div class="login-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Log In</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Log In">
+      </form>
+      <!-- forget and sing up btn -->
+      <div class="form-btns">
+        <a href="#" class ="forget">Mot de passe oublié?</a>
+        <a href="#" class ="sign-up-btn">Creer un compte</a>
+      </div>
+    </div>
+     <!-- Sing Up -->
+     <div class="sign-up-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Sign Up</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="text" placeholder="Nom et Prénom" name="fullName" required>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Sing Up">
+      </form>
+      <!-- forget and sign up btn -->
+      <div class="form-btns">
+        <a href="#" class ="Already-acount">Avez-vous déjà un compte?</a>
+      </div>
+    </div>
+  </div>
+  <!--=================== End log in and sing in  form ================-->
+  <!--=============== Start section intro ============================-->
+   <section id="hero" class="d-flex align-items-center py-5">
+    <div class="container text-center position-relative">
+      <h1>Argan</h1>
+      <h2>La magie de la nature</h2>
+      <a href="#intro" class="btn-get-started scrollto"><i class="fa fa-anchor" style="font-size:40px"></i></a>
+    </div>
+  </section> 
+  <section class="intro py-5" id="intro">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8 col-md-12">
+        <h1 class="py-4">L'HUILE D'ARGAN, UN SOIN PERFORMANT TOTALEMENT NATUREL.</h1>
+        <p>
+          L'huile d'argan est l'un des produits naturels les plus riches en vitamines E qui soient. 
+          Elle est également composée dans une très grande proportion d'acides gras insaturés. 
+          L'ensemble lui confère des propriétés cosmétiques exceptionnelles qui sont 
+          largement décrites dans les rubriques du site : Huile d'argan & Beauté.
+        </p>
+        <p>
+          L'huile d'argan excelle en particulier contre le dessèchement cutané et retarde l'inexorable processus de vieillissement de la peau. 
+          Elle constitue à cet égard un remarquable soin naturel dont la dimension anti-âge prend effet dès les premières applications.
+        </p>
+        <p>
+          Mais ses bienfaits vont bien au-delà de la quête de l'éternelle jeunesse. L'huile d'argan sublime le teint, elle adoucit et élastifie 
+          l'épiderme pour lui donner un toucher de velours, elle restaure la force, la brillance et le volume de la chevelure, elle revitalise 
+          les ongles cassants. Utilisée en huile de massage, elle met en évidence des propriétés apaisantes et relaxantes qui agissent sur la sphère neuro- psychologique pour un effet bien-être démultiplié.
+        </p>
+        <p>
+          L'huile d'argan agit en outre avec efficacité sur de très nombreuses affections de la peau telles l'eczéma, le psoriasis, les vergetures, l'acné, les escarres, 
+          certaines douleurs articulaires. Une utilisation régulière sur le cuir chevelu ralentit en outre la chute des cheveux. 
+          Elle est d'ailleurs utilisée comme un soin de médecine traditionnelle au Maroc (cf. rubrique Huile d'Argan & Santé).
+        </p>
+        </div>
+        <div class="col-lg-4 col-md-12 d-flex justify-content-md-center">
+        <img src="assets/img/oil.jpg" alt="argan-oil"> 
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <img src="assets/img/argan.jpg" alt="argan-oil" class="img-fluid">
+          <p>
+            L'huile d'argan est un produit 100% pur et naturel, qui peut être utilisée seule ou bien combinée à d'autres ingrédients au sein des cosmétiques. 
+            Un flacon d'huile dure longtemps, car l'huile est très économique.
+          </p>
+          <p>
+            Il est important de choisir une huile issue de l'agriculture biologique. Par conséquent, nous recommandons sur Ecco Verde l'huile d'argan de Farfalla,
+            qui porte également la certification NaTrue pour la cosmétique bio.
+          </p>
+          <p>
+            L’huile d’argan est incontournable dans les pays du Maghreb. 
+            Ses vertus ont aussi conquis l’Occident, probablement au cours du Xème siècle av.
+            J-C grâce aux comptoirs de commerce installés sur la côte Atlantique du Maroc.
+            Aujourd’hui, l’usage cosmétique de l’huiled’argan est largement répandu en Europe. 
+            Elle est couramment employée pour les soins corporels et capillaires.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!--=============== Start section intro ============================-->
+  <!--======================== Section Produits =========================-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="image" >
+          <div class="image-container">
+            <div class="big-img" >
+              <img src="assets/img/big_img_hammam/service-4-1.jpg" alt="argan-hammam" id="zoom" >
+            </div>
+            <div class="small-image">
+              <img src="assets/img/big_img_hammam/hammam-pack.jpg" alt="hammam">
+              <img src="assets/img/big_img_hammam/hamma-huile.jpg" alt="hammam">
+              <img src="assets/img/big_img_hammam/savon-noir.jpg" alt="hammam">
+              <img src="assets/img/big_img_hammam/hamma-products.jpg" alt="hammam">
+            </div>
+          </div>
+          <div class="content">
+            <h2>Hammam</h2>
+            <p>
+              L’huile d’Argan est particulièrement recommandée pour nourrir et adoucir la peau. Non grasse, 
+              elle pénètre rapidement et protège de la déshydratation cutanée. Il suffit de quelques gouttes chauffées dans 
+              la paume de la main et appliquées en massant doucement sur la peau ce qui la laissera souple et satinée.
+            </p>
+            <div class="stars">
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+      </div>
+    </div> 
+    <div class="container d-flex justify-content-evenly ">
+      <div class="row ">
+        <div class="col-md-4 ">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/big_img_hammam/hamma-products.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Hammam pack</h4>
+            <p class="card-text">50 Euro -/ <span>80 Euro</span></p>
+            <a href="#" data-name="Hammam_pack" data-price="50" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/big_img_hammam/hamma-huile.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Huile pour massage</h4>
+            <p class="card-text">30 Euro -/ <span> 40 Euro </span></p>
+            <a href="#" data-name="Huile_pour_massage" data-price="30" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/big_img_hammam/savon-noir.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Savon noir</h4>
+            <p class="card-text">20 Euro -/ <span> 35 Euro</span></p>
+            <a href="#" data-name="Savon_noir" data-price="20" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div class="image" >
+        <div class="image-container">
+          <div class="hair" >
+            <img src="assets/img/big_img_hair/i92853-.jpeg" alt="argan-hammam" id="zoom1" >
+          </div>
+          <div class="small">
+              <img src="assets/img/big_img_hair/hair-mask.jpg" alt="hammam">
+              <img src="assets/img/big_img_hair/hairjpeg" alt="hammam">
+              <img src="assets/img/big_img_hair/argan-bio.png" alt="hammam">
+          </div>
+        </div>
+        <div class="content">
+          <h2>Soin des cheveux</h2>
+          <p>
+            l’huile d’argan s’utilise comme un masque capillaire. Il convient de
+            l’appliquer des racines jusqu’aux extrémités des cheveux, puis de laisser reposer une dizaine de minutes.
+          </p>
+         
+        <div class="stars">
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+        </div>          
+        </div>
+      </div>      
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="assets/img/big_img_hair/i92853-.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile de cheveux</h4>
+              <p class="card-text">35 Euro -/ <span> 45 Euro</p>
+                <a href="#" data-name="Huile_de_cheveux" data-price="35" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="assets/img/big_img_hair/hair-mask.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Mask pour les cheveux</h4>
+              <p class="card-text">25 Euro -/ <span> 40 Euro </span></p>
+              <a href="#" data-name="Mask_pour_les_cheveux" data-price="25" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+               <img class="card-img-top" src="assets/img/big_img_hair/argan-bio.png" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Sérum pour les cheveux</h4>
+                <p class="card-text">70 Euro -/ <span>120 Euro</span></p>
+                <a href="#" data-name="Sérum_pour_les_cheveux" data-price="70" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+      <div class="image" >
+        <div class="image-container">
+          <div class="hydratation" >
+            <img src="assets/img/big-img_skin/perfect-skin-with-argan.jpg" alt="argan-hammam" id="zoom2" >
+          </div>
+            <div class="sm-img">
+              <img src="assets/img/big-img_skin/collection.png" alt="hammam">
+              <img src="assets/img/big-img_skin/argan-oil.jpeg" alt="hammam">
+              <img src="assets/img/big-img_skin/hydratation.jpeg" alt="hammam">
+              <img src="assets/img/big-img_skin/serum-a-l-huile-d-argan-biologique-hydratant-pour.jpg" alt="hammam">
+            </div>
+        </div>
+          <div class="content">
+            <h2>Soin de la peau :</h2>
+            <p>
+               pour le soin de la peau, l’huile d’argan s’utilise comme une lotion corporelle. Il suffit de déposer quelques gouttes dans le creux
+               de la main puis de l’appliquer sur le visage et le corps. De légers massages facilitent la pénétration.
+            </p>
+          <div class="stars">
+             <i class="fa fa-star-o"></i>
+             <i class="fa fa-star-o"></i>
+             <i class="fa fa-star-o"></i>
+             <i class="fa fa-star-o"></i>
+             <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/big-img_skin/argan-oil.jpeg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Huile hydratant</h4>
+            <p class="card-text">80 Euro -/ <span>150 Euro</span></p>
+            <a href="#" data-name="Huile_pour_toute_types_de_peaux" data-price="80" class="add-to-cart btn btn-primary">Add to cart</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/big-img_skin/hydratation.jpeg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Créme hydratante</h4>
+            <p class="card-text">40 Euro -/ <span> 120 Euro </span></p>
+            <a href="#" data-name="Créme_hydratante" data-price="40" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="assets/img/big-img_skin/serum-a-l-huile-d-argan-bio.jpg" alt="Card image cap">
+            <div class="card-block">
+            <h4 class="card-title">Serum anti-âge</h4>
+            <p class="card-text">100 Euro -/ <span> 140 Euro</span></p>
+            <a href="#" data-name="Serum_anti_âge" data-price="100" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+            </div>
+          </div>
+          </div>
+      </div>
+  </div>
+      <div class="image" >
+        <div class="image-container">
+          <div class="big" >
+            <img src="assets/img/big_img_beach/bronzer.jpg" alt="argan-hammam" id="zoom3" >
+          </div>
+          <div class="pic">
+             <img src="assets/img/big_img_beach/beach.jpeg" alt="hammam">
+             <img src="assets/img/big_img_beach/branze.jpeg" alt="hammam">
+             <img src="assets/img/big_img_beach/bronzage.jpg" alt="hammam">
+             <img src="assets/img/big_img_beach/bronzage-oil.jpg" alt="hammam">
+          </div>
+            </div>
+            <div class="content">
+              <h2>Plage et branzage</h2>
+              <p>
+                En été, l’argan peut être utilisé en huile coiffante pour 
+                réhydrater vos cheveux desséchés après une exposition au soleil ou après la plage
+              </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="assets/img/big_img_beach/beach.jpeg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Huile de branzage</h4>
+          <p class="card-text">20 Euro -/ <span>40 Euro</span></p>
+          <a href="#" data-name="Huile_de_branzage" data-price="20" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+        </div>
+      </div>
+            </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="assets/img/big_img_beach/branze.jpeg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Huile de branzage</h4>
+          <p class="card-text">25 Euro -/ <span> 35 Euro </span></p>
+          <a href="#" data-name="Huile_de_branzage" data-price="25" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+        </div>
+      </div>
+      </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="assets/img/big_img_beach/bronzage-oil.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Huile de branzage</h4>
+          <p class="card-text">50 Euro -/ <span> 85 Euro</span></p>
+          <a href="#" data-name="Huile_de_branzage" data-price="5O" class="add-to-cart btn btn-primary ">Ajouter au panier</a>
+        </div>
+      </div>
+       </div>
+      </div>
+      </div>
+          <div class="image" >
+            <div class="image-container">
+              <div class="picture" >
+                <img src="assets/img/big_img_medical/naturactive-chev-ongl-3moishle-argan-off.jpg" alt="argan-hammam" id="zoom4" >
+              </div>
+              <div class="pics">
+                <img src="assets/img/big_img_medical/huile-vegetale-bio-argane-fl-pompe-50ml.jpeg" alt="hammam">
+                <img src="assets/img/big_img_medical/vitamenE.jpg" alt="hammam">
+                <img src="assets/img/big_img_medical/massage.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Medical</h2>
+            <p>
+              Cette huile originaire du Maroc, riche en vitamine E et en insaponifiables, est réputée pour ses propriétés nourrissantes, 
+              régénérantes et restructurantes. Sa teneur en antioxydants en fait un actif idéal pour lutter contre les signes du vieillissement cutané,
+              et ses acides gras redonnent souplesse et douceur aux peaux sèches et dénutries.
+              L'huile d’argan est aussi utile pour soulager les douleurs articulaires.
+            </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div> 
+          <div class="container d-flex justify-content-center">
+            <div class="row ">
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="assets/img/big_img_medical/huile-vegetale-bio-argane-fl-pompe-50ml.jpeg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Huile Vegitale</h4>
+                  <p class="card-text">80 Euro -/ <span>130 Euro</span></p>
+                    <a href="#" data-name="Huile_Vegitale" data-price="80" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="assets/img/big_img_medical/naturactive-chev-ongl-3moishle-argan-off.jpg" alt="Card image cap">
+                  <div class="card-block">
+                  <h4 class="card-title">Anti-chute</h4>
+                  <p class="card-text">150 Euro -/ <span> 170 Euro </span></p>
+                    <a href="#" data-name="Anti_chute" data-price="150" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="assets/img/big_img_medical/vitamenE.jpg" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">Vitamine E</h4>
+                      <p class="card-text">40 Euro -/ <span> 95 Euro</span></p>
+                    <a href="#" data-name="Vitamine_E" data-price="40" class="add-to-cart btn btn-primary">Ajouter au panier</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</section> 
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table"></table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">commander</button>
+          <button class="clear-cart btn btn-danger">Vider le Panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<!-- <footer class="footer py-2 mt-5">
+<p class="text-dark text-center">Copyright © Jameela 2021</p>
+</footer>  -->
+
+
+<div class="container-fluid my-5 d-grid gap-5 py-4">
+  <div class="about-text p-5 border text-center">
+    <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
+    <hr>
+    <img src="assets/img/tooooote.gif" class="img-tot py-4" alt="">
+    <!-- Termes & Conditions -->
+    <div class="about-text  text-center">
+      <div class="row pb-1">
+        <div class="col-sm-4 pb-5 text-center ">
+            <h3 class="pb-4">News Letter</h3>
+            <form action="" method="post">
+                <input type="text" placeholder="exemple@gmail.com">
+                <button type="button" class="btn btn-outline-dark">s'inscrire</button>
+            </form>
+        </div>
+        <div class="col-sm-4 col-md-4 pb-5 text-center">
+            <h3 class="pb-4">Contact</h3>
+            <i class="fa fa-youtube-play" style="font-size:36px"></i>
+            <i class="fa fa-facebook" style="font-size:36px"></i>
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <h3 class="text-center pb-3">Service Client</h3>
+            <div class="service">
+                <p>Question?</p>
+                <p>Mon compte</p>
+                <p>Terms et conditions</p>
+                <p>Information de livraisons</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer py-2">
+    <p class="text-dark text-center">Copyright © Jameela 2021</p>
+</footer>
+
+
+<!-- <footer id="footer">
+  <div class="footer-top">
+    <div class="container-fluid" id="contact">
+      <div class="row">
+  <div class="container-fluid">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Jameela</span></strong>. Tous droits réservés.
+    </div>
+    <div class="credits">
+      Réalisé Par <a href="h#">Meryem, Flavie, Anne, et Cécile</a>
+    </div>
+  </div>
+</footer>End Footer -->
+
+<!-- Jquiery CDN -->
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+</script>
+
+<!-- por afficher la modal -->
+<script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous">
+</script>
+<!-- pour l autocomplete -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- pour le zoom des photos -->
+<script src="js/zoomsl.min.js"></script>
+<!-- le main js de ma page -->
+<script src="js/main.js"></script> 
+</body>
+</html>
