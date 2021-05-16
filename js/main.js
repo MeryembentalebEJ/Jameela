@@ -291,3 +291,20 @@ $('.show-cart').on("change", ".item-count", function (event) {
 });
 
 displayCart();
+
+// Slider of the first page
+
+$(document).ready(function(){
+   $('.slider-inner').slick({
+      infinit: true,
+      slidesToShow: 4, //it controls the number of the pics to show
+      slideToScroll: 1,
+      centerMode: true,
+      centerPadding:'0px',
+      arrow: false,
+      autoplay: true,
+      autopalySpeed: 1000,
+      speed: 1500
+
+   });
+});
